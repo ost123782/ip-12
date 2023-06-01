@@ -1,0 +1,12 @@
+.image__welcome {
+    @apply bg-no-repeat bg-center bg-fixed bg-cover
+    w-full h-screen flex justify-center items-center text-center text-amber-50
+}
+
+.image__welcome h1 {
+    font-size: 30px;
+}
+
+.image__welcome p {
+    font-size: 24px;
+}
