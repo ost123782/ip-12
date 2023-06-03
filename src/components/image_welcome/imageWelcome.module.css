@@ -10,3 +10,20 @@
 .image__welcome p {
     font-size: 24px;
 }
+
+.image__welcome div {
+    transition: 1s ease-in-out;
+}
+
+@keyframes welcome__animation {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.active {
+    animation: welcome__animation 1.5s linear;
+}

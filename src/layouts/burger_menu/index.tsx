@@ -1,9 +1,9 @@
-import styles from './header.module.css'
+import styles from './burger_menu.module.css'
 
-export default function header () {
+export default function burger_menu () {
     return (
-        <header className={styles.header}>
-            <nav className={styles.header__nav}>
+        <div className={styles.burger__menu}>
+            <nav className={styles.burger__nav}>
                 <ul className={styles.nav__list}>
                     <li className={styles.list__item}>Головна</li>
                     <li className={styles.list__item}>Про нас</li>
@@ -11,6 +11,6 @@ export default function header () {
                     <li className={styles.list__item}>Відпочинок</li>
                 </ul>
             </nav>
-        </header>
+        </div>
     )
 }

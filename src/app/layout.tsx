@@ -1,5 +1,6 @@
 import './globals.css'
 import { Raleway } from 'next/font/google'
+import BurgerMenu from '@/layouts/burger_menu'
 
 const raleway = Raleway({
   weight: '400',
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <BurgerMenu/>
+        {children}
+      </body>
     </html>
   )
 }
