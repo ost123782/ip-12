@@ -1,8 +1,13 @@
-import styles from './burger_menu.module.css'
+'use client'
 
-export default function burger_menu () {
+import { useContext } from 'react'
+import styles from './burger_menu.module.css'
+import { Burger_context } from '@/context/burger_context/burger_context'
+
+export default function BurgerMenu () {
+    const {isOpen} = useContext(Burger_context)
     return (
-        <div className={styles.burger__menu}>
+        <div className={isOpen ? styles.burger__menu_active : styles.burger__menu}>
             <nav className={styles.burger__nav}>
                 <ul className={styles.nav__list}>
                     <li className={styles.list__item}>Головна</li>

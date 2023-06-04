@@ -1,0 +1,15 @@
+.header, .header_active {
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+    @apply w-full h-14 fixed top-0 left-0 p-6 flex justify-between items-center;
+}
+
+.header  {
+    background-color: rgba(64, 64, 64, 0.5);
+}
+
+
+
+.header_active {
+    background-color: none;
+}

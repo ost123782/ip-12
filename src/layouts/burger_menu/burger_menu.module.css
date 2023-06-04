@@ -1,18 +1,31 @@
+.burger__menu_active {
+    @apply top-0;
+    overflow: hidden;
+}
+
+.burger__menu, .burger__menu_active {
+    @apply fixed h-full w-screen flex justify-center content-center;
+    background-color: rgba(0,0,0, 0.75);
+    z-index: 2;
+    transition: 1s ease-in-out;
+}
+
 .burger__menu {
-    @apply fixed z-10 h-screen w-screen;
-    background-color: rgba(181, 181, 181, 0.5);
+    top: -100%;
 }
 
 .burger__nav {
-    height: 100%;
-    width: 200px;
-    background-color: rgba(181, 181, 181, 0.7);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
 
+}
+
+.nav__list {
+    list-style-type: none;
 }
 
 .list__item {

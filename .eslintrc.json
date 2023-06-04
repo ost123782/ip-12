@@ -5,6 +5,6 @@
     "no-alert": "error",
     "no-var": "error",
     "jsx-quotes": ["error", "prefer-double"],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single", "backtick"]
   }
 }
