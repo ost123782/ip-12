@@ -6,6 +6,7 @@ export default function useBurger (): IBurgerContext {
 
     const setOpen = useCallback((currentStOpen: boolean): void => {
         setStOpen(currentStOpen)
+        document.body.style.overflow = !currentStOpen ? 'auto' : 'hidden'
     }, [])
 
     return {
