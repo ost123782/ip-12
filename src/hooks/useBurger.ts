@@ -1,4 +1,4 @@
-import IBurgerContext from '@/interfaces/inf_burger_context'
+import IBurgerContext from '@/interfaces/context'
 import { useCallback, useState } from 'react'
 
 export default function useBurger (): IBurgerContext {

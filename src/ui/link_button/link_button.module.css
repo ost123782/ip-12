@@ -1,0 +1,8 @@
+.link__button {
+    @apply no-underline text-white p-4 rounded border border-solid border-white text-2xl;
+    transition: 0.3s ease-in-out;
+}
+
+.link__button:hover {
+    @apply p-4 text-3xl;
+}

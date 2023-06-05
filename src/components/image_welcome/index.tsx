@@ -1,10 +1,10 @@
 'use client'
 
 import styles from './imageWelcome.module.css'
-import {ImageWelcomeInf} from '@/interfaces/image_welcome'
+import {ImageWelcomeInf} from '@/interfaces/components'
 import {useInView} from 'react-intersection-observer'
 
-export default function ImageWelcome ({image, titleText, descriptionText}: ImageWelcomeInf) {
+export default function ImageWelcome ({children, image, titleText, descriptionText}: ImageWelcomeInf) {
 
     const { ref, inView,  } = useInView({
         triggerOnce: true,
@@ -20,6 +20,7 @@ export default function ImageWelcome ({image, titleText, descriptionText}: Image
             <div className={inView ? styles.active : undefined}>
                 <h1>{titleText}</h1>
                 <p>{descriptionText}</p>
+                {children}
             </div>
         </section>
     )

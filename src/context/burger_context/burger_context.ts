@@ -1,4 +1,4 @@
-import IBurgerContext from '@/interfaces/inf_burger_context'
+import { IBurgerContext } from '@/interfaces/context'
 import { createContext, useState } from 'react'
 
 const DEFAULT_BURGER_STATE ={
