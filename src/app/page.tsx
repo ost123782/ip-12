@@ -20,7 +20,7 @@ export default function Home() {
                       titleText={'То ж, давайте не гаяти часу!'}
                       descriptionText={'Розпочинаємо!'}
         >
-          <LinkButton link='/' title='Почати' />
+          <LinkButton link='/about' title='Почати' />
         </ImageWelcome>
     </main>
   )
