@@ -1,7 +1,6 @@
 import styles from './link_button.module.css'
 import { ILinkButton } from '@/interfaces/ui'
 import Link from 'next/link'
-import React from 'react'
 
 function LinkButton({link, title} : ILinkButton) {
   return (
