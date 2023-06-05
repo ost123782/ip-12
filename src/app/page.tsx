@@ -1,6 +1,3 @@
-'use client'
-
-import styles from './main.module.css'
 import ImageWelcome from '../components/image_welcome'
 import image__welcome1 from '@/assets/image__welcome1.jpg'
 import image__welcome2 from '@/assets/image__welcome2.jpg'
