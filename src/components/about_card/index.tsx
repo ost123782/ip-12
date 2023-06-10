@@ -1,22 +1,23 @@
-import styles from './about_card.module.css'
-import Image from 'next/image'
+'use client'
 
-export default function AboutCard ({imageSrc, articleText}: {imageSrc: string, articleText: string}) {
+import { useInView } from 'react-intersection-observer'
+import styles from './about_card.module.css'
+
+
+export default function AboutCard ({children}: {children: React.ReactNode}) {
+
+	const { ref, inView,  } = useInView({
+        triggerOnce: true,
+        rootMargin: '-50px'
+    })
 
 
 	return (
 			<article
-				className={styles.about__card}
+				className={inView ? styles.about__card_active : styles.about__card}
+				ref={ref}
 			>
-				<Image
-					width={500}
-					height={500}
-					alt={'card__image'}
-					src={imageSrc}
-				/>	
-				<p>
-				{articleText}
-				</p>
+				{children}
 			</article>
 		)
 }

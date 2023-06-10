@@ -1,0 +1,28 @@
+.about__card, .about__card_active {
+    padding: 30px 30px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3030304b;
+    font-size: 24px;
+}
+
+.about__card_active {
+    animation: card__animation 1s ease-in-out;
+}
+
+@keyframes card__animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card__image {
+    border-radius: 20px;
+}
