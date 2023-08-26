@@ -1,15 +1,13 @@
 'use client'
 
-import { useInView } from 'react-intersection-observer'
+import useViewComponent from '@/hooks/useViewComponent'
 import styles from './about_card.module.css'
 
 
 export default function AboutCard ({children}: {children: React.ReactNode}) {
 
-const { ref, inView,  } = useInView({
-	triggerOnce: true,
-	rootMargin: '-50px'
-})
+const { ref, inView } = useViewComponent()
+
 
 
 return (

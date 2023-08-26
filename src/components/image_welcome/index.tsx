@@ -2,14 +2,11 @@
 
 import styles from './imageWelcome.module.css'
 import {ImageWelcomeInf} from '@/interfaces/components'
-import {useInView} from 'react-intersection-observer'
+import useViewComponent from '@/hooks/useViewComponent'
 
 export default function ImageWelcome ({children, image, titleText, descriptionText}: ImageWelcomeInf) {
 
-    const { ref, inView,  } = useInView({
-        triggerOnce: true,
-        rootMargin: '-50px'
-    })
+    const {ref, inView} = useViewComponent()
 
     return (
         <section
