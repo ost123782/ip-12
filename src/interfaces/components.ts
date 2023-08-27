@@ -4,3 +4,7 @@ export interface ImageWelcomeInf {
     titleText: string,
     descriptionText: string
 }
+
+export interface IAboutCard {
+  children: React.ReactNode
+}
