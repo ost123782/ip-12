@@ -1,11 +1,11 @@
 'use client'
 
 import useViewComponent from '@/hooks/useViewComponent'
-import styles from './about_card.module.css'
-import { IAboutCard } from '@/interfaces/components'
+import styles from './card_wrapper.module.css'
+import { ICardWrapper } from '@/interfaces/components'
 
 
-export default function AboutCard ({children}: IAboutCard) {
+export default function CardWrapper ({children}: ICardWrapper) {
 
   const { ref, inView } = useViewComponent()
 

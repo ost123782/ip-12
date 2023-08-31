@@ -1,11 +1,10 @@
 'use client'
 
-import styles from './imageWelcome.module.css'
-import {ImageWelcomeInf} from '@/interfaces/components'
+import styles from './imageSection.module.css'
+import {ImageSectionInf} from '@/interfaces/components'
 import useViewComponent from '@/hooks/useViewComponent'
 
-export default function ImageWelcome ({children, image, titleText, descriptionText}: ImageWelcomeInf) {
-
+export default function ImageSection ({children, image, titleText, descriptionText}: ImageSectionInf) {
     const {ref, inView} = useViewComponent()
 
     return (
@@ -16,7 +15,7 @@ export default function ImageWelcome ({children, image, titleText, descriptionTe
         >
             <div className={inView ? styles.active : undefined}>
                 <h1>{titleText}</h1>
-                <p>{descriptionText}</p>
+                {descriptionText && <p>{descriptionText}</p>}
                 {children}
             </div>
         </section>

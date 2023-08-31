@@ -1,10 +1,10 @@
-export interface ImageWelcomeInf {
+export interface ImageSectionInf {
     children?: React.ReactNode,
     image: string,
     titleText: string,
-    descriptionText: string
+    descriptionText?: string
 }
 
-export interface IAboutCard {
+export interface ICardWrapper {
   children: React.ReactNode
 }

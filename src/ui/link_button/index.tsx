@@ -4,7 +4,10 @@ import Link from 'next/link'
 
 function LinkButton({link, title} : ILinkButton) {
   return (
-        <Link className={styles.link__button}  href={link}>{title}</Link>
+        <Link
+            className={styles.link__button}
+            href={link}
+        >{title}</Link>
   )
 }
 
